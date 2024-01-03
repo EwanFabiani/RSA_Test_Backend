@@ -1,2 +1,16 @@
-package dev.ewanfabiani.main;public class Main {
+package dev.ewanfabiani.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan("dev.ewanfabiani.api.controllers")
+public class Main {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
+
+    }
+
 }
